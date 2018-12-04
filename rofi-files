@@ -5,7 +5,7 @@ import subprocess
 if __name__ == '__main__':
 
     files = subprocess.run('fd', encoding='utf-8',
-                           capture_output=True).stdout.split()
+                           capture_output=True).stdout.split('\n')
 
     title = 'rofi-files'
     rofi_command = 'rofi -dmenu -i -p {}'.format(title)
