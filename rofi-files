@@ -15,6 +15,6 @@ if __name__ == '__main__':
 
     if cp.returncode == 0:
         file = cp.stdout.strip()
-        xdg_command = 'xdg-open {}'.format(file)
-        subprocess.run(xdg_command.split(),
+        xdg_command = ['xdg-open', file]
+        subprocess.run(xdg_command,
                        encoding='utf-8', capture_output=True)
