@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='rofi-files',
-    version='0.1.0',
+    version='0.1.1',
     scripts=['rofi-files'],
     url='https://github.com/cjbassi/rofi-files',
 )
